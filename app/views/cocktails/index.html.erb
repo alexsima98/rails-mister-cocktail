@@ -1,0 +1,7 @@
+
+<h1>Cocktails#index</h1>
+<% @cocktails.each do |r| %>
+<p><%=link_to r.name, cocktail_path(r) %></p>
+<p><%= "-----------------" %></p>
+<% end %>
+<button class="btn btn-success p-2 text-dark"><%= link_to "Add a cocktail", cocktails_new_path %></button>
